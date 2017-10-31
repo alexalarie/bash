@@ -1,6 +1,6 @@
 # Download all linked papers from ADS url
 
-url="http://adsabs.harvard.edu/cgi-bin/nph-ref_query?bibcode=2008ApJS..178...20A&amp;refs=CITATIONS&amp;db_key=AST"
+url="http://adsabs.harvard.edu/cgi-bin/nph-ref_query?bibcode=...;refs=CITATIONS&amp;db_key=AST"
 
 links=$(wget --quiet -O - $url | grep -o 'http://[^"]*')
 
