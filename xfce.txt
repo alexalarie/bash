@@ -1,0 +1,11 @@
+To create a new icon in the applications menu
+
+Add this file to /home/alex/.local/share/applications/
+
+[Desktop Entry]
+Version=57.0
+Type=Application
+Name=Firefox Quantum
+Exec=/opt/firefox/57.0/firefox
+Icon=/opt/firefox/57.0/browser/icons/mozicon128.png
+Categories=Network; 
