@@ -1,4 +1,4 @@
-To create a new icon in the applications menu
+To create a new icon in the applications menu on xfce (tested with xfce version 4.12)
 
 Add this file to /home/alex/.local/share/applications/
 
@@ -9,3 +9,14 @@ Name=Firefox Quantum
 Exec=/opt/firefox/57.0/firefox
 Icon=/opt/firefox/57.0/browser/icons/mozicon128.png
 Categories=Network; 
+
+Sub-Menu      Categories
+--------      ----------
+Accessories 	Utility
+Development 	Development
+Games 	      Game
+Graphics 	    Graphics
+Internet 	    Network
+Multimedia 	  AudioVideo
+Office 	      Office
+System 	      System
