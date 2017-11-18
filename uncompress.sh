@@ -6,3 +6,6 @@ tar xzf file.tar.gz
 
 # Extract .tar.bz2 
 tar xjf file.tar.bz2
+
+# Extract to a specific directory
+tar xzf file.tar.gz -C /home/alex/directory
