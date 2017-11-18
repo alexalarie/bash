@@ -12,3 +12,6 @@ tar xzf file.tar.gz -C /home/alex/directory
 
 # List all files contain in a .tar.gz file
 tar -tf file.tar.gz > list.txt
+
+# Extract a specific file in the .tar.gz
+tar --extract --file=$tar $file --xform='s#^.+/##x'
