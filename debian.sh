@@ -9,3 +9,4 @@ find . -name "pymap_pc_up0001.nfn" -print0 | xargs -0 rm -rf
 
 # Auto-startup xfce configuration files
 ~/.config/autostart
+~/.cache/sessions/
