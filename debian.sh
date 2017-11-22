@@ -10,3 +10,6 @@ find . -name "pymap_pc_up0001.nfn" -print0 | xargs -0 rm -rf
 # Auto-startup xfce configuration files
 ~/.config/autostart
 ~/.cache/sessions/
+
+# To view apt-get packages sizes
+dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n
