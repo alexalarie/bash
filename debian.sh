@@ -13,3 +13,6 @@ find . -name "pymap_pc_up0001.nfn" -print0 | xargs -0 rm -rf
 
 # To view apt-get packages sizes
 dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n
+
+# Open folder from terminal
+xdg-open .
