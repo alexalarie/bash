@@ -16,3 +16,6 @@ dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n
 
 # Open folder from terminal
 xdg-open .
+
+# Open xfce terminal
+xfce4-terminal
