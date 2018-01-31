@@ -28,9 +28,7 @@ For Tor Web Browser
 Version=64-7.5
 Type=Application
 Name=Tor Browser
-Exec=/opt/tor/64-7.5/start-tor-browser 
-Exec=sh -c '"/home/alex/Desktop/tor-browser_en-US/Browser/start-tor-browser" --detach 
-X-TorBrowser-ExecShell=./Browser/start-tor-browser --detach
+Exec=/opt/tor/64-7.5/Browser/start-tor-browser --detach 
 Icon=/opt/tor/64-7.5/Browser/browser/icons/mozicon128.png
 Categories=Network;WebBrowser;Security; 
 StartupWMClass=Tor Browser
