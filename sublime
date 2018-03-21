@@ -1,0 +1,33 @@
+Problem :
+          Package Control: Unable to download https://packagecontrol.io/channel_v3.json after 3 attempts
+Solution :
+           Preferences > Package Settings > Package Control > Settings-Users 
+           
+Add the following to the settings file :
+
+{
+	"downloader_precedence":
+	{
+		"linux":
+		[
+			"curl",
+			"wget",
+			"urllib"
+		],
+		"osx":
+		[
+			"urllib"
+		],
+		"windows":
+		[
+			"wininet"
+		]
+	},
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Terminal"
+	]
+}
