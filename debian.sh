@@ -19,3 +19,8 @@ xdg-open .
 
 # Open xfce terminal
 xfce4-terminal
+
+# Open port
+iptables -I INPUT -p tcp –dport 8080 -j ACCEPT
+service iptables save
+service iptables restart
