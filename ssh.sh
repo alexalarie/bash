@@ -12,3 +12,6 @@ cat .ssh/id_rsa.pub | ssh b@B 'cat >> .ssh/authorized_keys'
 # Change permission to folder/file
 .ssh to 700
 .ssh/authorized_keys to 640
+
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
