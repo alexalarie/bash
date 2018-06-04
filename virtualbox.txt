@@ -1,0 +1,11 @@
+# Start VPN
+vboxmanage startvm Debian --type headless
+
+# View port open
+VBoxManage showvminfo Debian | grep 'Rule'
+
+# Open port
+VBoxManage modifyvm "Debian" --natpf1 "ssh,tcp,127.0.0.1,22765,,22"
+
+# Delete port 
+VBoxManage modifyvm Debian --natpf1 delete ssh
