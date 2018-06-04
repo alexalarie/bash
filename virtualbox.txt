@@ -1,5 +1,6 @@
 # Start VPN
 vboxmanage startvm Debian --type headless
+VBoxManage controlvm "Debian" addencpassword "Debian" -
 
 # View port open
 VBoxManage showvminfo Debian | grep 'Rule'
