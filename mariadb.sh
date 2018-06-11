@@ -1,3 +1,4 @@
+##########################################################################
 $ sudo apt update
 $ sudo apt install mariadb-server mariadb-client
 $ sudo mysql_secure_installation
@@ -10,4 +11,5 @@ mysql> FLUSH PRIVILEGES;
 mysql> exit;
 
 $ service mysql restart
+##########################################################################
 
