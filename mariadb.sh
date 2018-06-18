@@ -16,3 +16,7 @@ $ service mysql restart
 # Create a new user and grant all privileges
 CREATE USER 'OVN_admin'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON * . * TO 'OVN_admin'@'localhost';
+
+# Create user read only 
+CREATE USER 'OVN_user'@'localhost' IDENTIFIED BY 'password';
+grant select on 3MdBs.* to 'OVN_user'@'%' identified by 'password';
