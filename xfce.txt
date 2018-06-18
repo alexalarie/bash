@@ -32,3 +32,7 @@ Exec=/opt/tor/64-7.5/Browser/start-tor-browser --detach
 Icon=/opt/tor/64-7.5/Browser/browser/icons/mozicon128.png
 Categories=Network;WebBrowser;Security; 
 StartupWMClass=Tor Browser
+
+##############################################################################
+# Change default terminal 
+sudo update-alternatives --config x-terminal-emulator
