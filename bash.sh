@@ -5,3 +5,6 @@ done
 
 # Padding
 printf "%05d\n" $i
+
+# Increment 
+count=$((count+1))
