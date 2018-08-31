@@ -20,3 +20,6 @@ GRANT ALL PRIVILEGES ON * . * TO 'OVN_admin'@'localhost';
 # Create user read only 
 CREATE USER 'OVN_user'@'localhost' IDENTIFIED BY 'password';
 grant select on 3MdBs.* to 'OVN_user'@'%' identified by 'password';
+
+##########################################################################
+update shock_params set script='shock_s4_m5113_preio_noPrecur.sh' where script='shock_s4_m5113_preio_noPrecur_speHe.sh';
